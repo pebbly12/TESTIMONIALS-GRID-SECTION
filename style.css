@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
+
+:root {
+  --MODREATE-VIOLET: hsl(263, 55%, 52%);
+  --SEMI-TRANSPARENT-LIGHT-PURPLE: hsla(262, 66%, 75%, 0.582);
+  --VERY-DARK-GRAYISH-BLUE: hsl(217, 19%, 35%);
+  --VERY-DARK-BLACKISH-BLUE: hsl(219, 29%, 14%);
+  --WHITE: hsl(0, 0%, 100%);
+  --SEMI-TRANSPARENT-WHITE: hsla(0, 0%, 100%, 0.5);
+  --SEMI-TRANSPARENT-DARK-GRAYISH-BLUE: hsla(217, 19%, 35%, 0.7);
+  --LIGHT-GRAY: hsl(0, 0%, 81%);
+  --LIGHT-GRAYISH-BLUE: hsl(210, 46%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: var(--LIGHT-GRAYISH-BLUE);
+  height: 100vh;
+}
+
+/* Card Structure */
+.card {
+  margin-top: 90px;
+  padding: 20px;
+  display: grid;
+  gap: 1rem;
+}
+
+/* General Element Styling */
+div {
+  margin-left: 10px;
+}
+
+/* First Card Style */
+.first_card {
+  background-color: var(--MODREATE-VIOLET);
+  background-image: url(bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 89%;
+  background-size: 127px;
+  border-radius: 10px;
+  padding: 35px;
+}
+.first_card_header {
+  display: flex;
+  align-items: center;
+}
+.first_card_header img {
+  border: 2px solid var(--SEMI-TRANSPARENT-LIGHT-PURPLE);
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.first_card_header .name {
+  color: var(--WHITE);
+  font-weight: 500;
+}
+.first_card_header .verified {
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+.first_section_para {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 98%;
+  color: var(--WHITE);
+}
+.first_section_aside {
+  margin-top: 20px;
+  line-height: 1.5;
+  width: 93%;
+  font-size: 1rem;
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+
+/* Second Card Style */
+.second_card {
+  margin-top: 30px;
+  background-color: var(--VERY-DARK-GRAYISH-BLUE);
+  border-radius: 10px;
+  padding: 35px;
+}
+.second_card_header {
+  display: flex;
+  align-items: center;
+}
+.second_card_header img {
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.second_card_header .name {
+  color: var(--WHITE);
+  font-weight: 500;
+}
+.second_card_header .verified {
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+.second_section_para {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 97.5%;
+  color: var(--WHITE);
+}
+.second_section_aside {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+
+/* Third Card Style */
+.third_card {
+  margin-top: 30px;
+  background-color: var(--WHITE);
+  border-radius: 10px;
+  padding: 35px;
+}
+.third_card_header {
+  display: flex;
+  align-items: center;
+}
+.third_card_header img {
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.third_card_header .name {
+  color: var(--VERY-DARK-GRAYISH-BLUE);
+  font-weight: 500;
+}
+.third_card_header .verified {
+  color: var(--SEMI-TRANSPARENT-DARK-GRAYISH-BLUE);
+}
+.third_section_para {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  width: 97.5%;
+  font-weight: 600;
+  color: var(--VERY-DARK-GRAYISH-BLUE);
+}
+.third_section_aside {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--SEMI-TRANSPARENT-DARK-GRAYISH-BLUE);
+}
+
+/* Fourth Card Style */
+.fourth_card {
+  margin-top: 30px;
+  background-color: var(--VERY-DARK-BLACKISH-BLUE);
+  border-radius: 10px;
+  padding: 35px;
+}
+.fourth_card_header {
+  display: flex;
+  align-items: center;
+}
+.fourth_card_header img {
+  border: 2px solid var(--MODREATE-VIOLET);
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.fourth_card_header .name {
+  color: var(--WHITE);
+  font-weight: 500;
+}
+.fourth_card_header .verified {
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+.fourth_section_para {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  width: 99%;
+  font-weight: 600;
+  color: var(--WHITE);
+}
+.fourth_section_aside {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  width: 99%;
+  color: var(--SEMI-TRANSPARENT-WHITE);
+}
+
+/* Fifth Card Style */
+.fifth_card {
+  margin-top: 30px;
+  background-color: var(--WHITE);
+  border-radius: 10px;
+  padding: 35px;
+}
+.fifth_card_header {
+  display: flex;
+  align-items: center;
+}
+.fifth_card_header img {
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.fifth_card_header .name {
+  color: var(--VERY-DARK-GRAYISH-BLUE);
+  font-weight: 500;
+}
+.fifth_card_header .verified {
+  color: var(--SEMI-TRANSPARENT-DARK-GRAYISH-BLUE);
+}
+.fifth_section_para {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--VERY-DARK-GRAYISH-BLUE);
+}
+.fifth_section_aside {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  width: 98.5%;
+  color: var(--SEMI-TRANSPARENT-DARK-GRAYISH-BLUE);
+}
+
+/* Mobile frame */
+@media (min-width: 765px) {
+  /* Main Card */
+  .card {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  /* First Card Style */
+  .first_card {
+    display: grid;
+    grid-column: span 2;
+  }
+
+  /* Third Card Style */
+  .third_card {
+    grid-column: 1;
+  }
+
+  /* Fourth Card Style */
+  .fourth_card {
+    grid-column: span 2;
+  }
+
+  /* Fifth Card Style */
+  .fifth_card {
+    grid-column: 2;
+    grid-row: 2 / 4;
+  }
+}
+
+/* Desktop frame */
+@media (min-width: 1440px) {
+  main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Main card */
+  .card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 8rem auto;
+    gap: 2rem;
+    margin-inline: 15rem;
+  }
+
+  /* First Card Style */
+  .first_card {
+    margin-top: 30px;
+    background-position-x: 81%;
+    background-size: 135px;
+  }
+  .first_section_para {
+    width: 99%;
+    font-size: 1.6rem;
+  }
+
+  /* Second Card Style */
+  .second_section_para {
+    font-size: 1.6rem;
+  }
+  .second_section_aside {
+    width: 89%;
+  }
+
+  /* Third Card Style */
+  .third_card {
+    margin-top: 0;
+  }
+  .third_section_para {
+    font-size: 1.6rem;
+  }
+  .third_section_aside {
+    width: 90%;
+  }
+
+  /* Fourth Card Style */
+  .fourth_card {
+    margin-top: 0;
+  }
+  .fourth_section_para {
+    font-size: 1.6rem;
+  }
+  .fourth_section_aside {
+    width: 93%;
+  }
+
+  /* Fifth Card Style */
+  .fifth_card {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+  }
+  .fifth_section_para {
+    font-size: 1.6rem;
+  }
+  .fifth_section_aside {
+    width: 90%;
+  }
+}
